@@ -1,6 +1,7 @@
 ﻿using Application.Application.Dto;
 using Application.Application.Interface;
 using Application.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class UserDetailsController : ControllerBase
     {
         public readonly IUserDetailsService _userDetailsService;
