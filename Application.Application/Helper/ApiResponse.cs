@@ -27,12 +27,5 @@ namespace Demo.Application.Helper
             this.Data = data;
         }
 
-        public ApiResponse(bool v1, string v2, int v3, Task<IEnumerable<UsersDetails>> result)
-        {
-            this.v1 = v1;
-            this.v2 = v2;
-            this.v3 = v3;
-            this.result = result;
-        }
     }
 }
