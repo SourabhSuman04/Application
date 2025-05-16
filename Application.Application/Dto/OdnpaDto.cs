@@ -53,12 +53,6 @@ namespace Application.Application.Dto
         public bool? isReduction { get; set; }
         public bool? isCollection { get; set; }
         public bool? isUnique { get; set; }
-
-
-        
-           
-        
-          
           
         }
 

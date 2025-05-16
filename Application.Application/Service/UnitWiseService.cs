@@ -87,7 +87,7 @@ namespace Application.Application.Service
                                     Center_Name = row.Cell(7).GetString(),
                                     Client_Name_Spouse_Name = row.Cell(8).GetString(),
                                     MobileNo = row.Cell(9).TryGetValue(out double mobileVal) ? mobileVal : 0d,
-                                    Loan_No = row.Cell(10).GetString(),
+                                    Loan_No = row.Cell(10).GetString().Trim(),
                                     RegularEMI = row.Cell(11).GetString(),
                                     LastCollectionDate = row.Cell(12).GetString(),
                                     Single_Or_Joint = row.Cell(13).GetString(),
@@ -166,7 +166,7 @@ namespace Application.Application.Service
                     Center_Name = dto.Center_Name,
                     Client_Name_Spouse_Name = dto.Client_Name_Spouse_Name,
                     MobileNo = (long)dto.MobileNo,
-                    Loan_No = dto.Loan_No,
+                    Loan_No = dto.Loan_No.Trim(),
                     Single_Or_Joint = dto.Single_Or_Joint,
                     FunderLoanNo = dto.FunderLoanNo,
 

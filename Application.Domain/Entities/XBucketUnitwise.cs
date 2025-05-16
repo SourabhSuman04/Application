@@ -16,10 +16,10 @@ namespace Application.Domain.Entities
         public string State { get; set; }
         public string Unit { get; set; }
         public float  X_Bucket_flow_clients { get; set; }
-        public float  VisitsonXbucket { get; set; }
-        public float  UniqueVisitsonXbucket { get; set; }
+        public float  Visits_on_X_bucket { get; set; }
+        public float Unique_Visits_on_X_bucket { get; set; }
         public float  Reduced { get; set; }
-        public float  Collected { get; set; }
-        public float  CollectedAmount { get; set; }
+        public float Collected { get; set; }
+        public float  Collected_Amount { get; set; }
     }
 }
